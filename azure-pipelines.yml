@@ -6,8 +6,8 @@
 trigger:
 - main
 
-pool:
-  vmImage: ubuntu-latest
+pool: neso
+  #vmImage: ubuntu-latest
 
 strategy:
   matrix:
