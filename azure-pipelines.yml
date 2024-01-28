@@ -12,8 +12,6 @@ pool: neso
   ### un mic comment
 strategy:
   matrix:
-    Python27:
-      python.version: '2.7'
     Python39:
       python.version: '3.9'  
 
@@ -34,5 +32,5 @@ steps:
 #   displayName: 'pytest'
 
 - script: |
-    curl ip.me
+    curl -4 ip.me
   displayName: 'ip-ul agentului'
