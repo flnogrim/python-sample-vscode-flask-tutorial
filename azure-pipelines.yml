@@ -9,6 +9,7 @@ trigger:
 pool: neso
   #vmImage: ubuntu-latest
 
+  ### un mic comment
 strategy:
   matrix:
     Python27:
