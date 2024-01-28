@@ -8,7 +8,9 @@ trigger:
 
 pool:
   # vmImage: ubuntu-latest
-  name: neso
+  - name: neso
+    value: neso
+
 strategy:
   matrix:
     Python27:
