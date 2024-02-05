@@ -10,6 +10,10 @@ parameters:
   - name: testvar1
     displayName: test prima variabila parametru
     type: string
+  - name: test
+    displayName: Run Tests?
+    type: boolean
+    default: false
 
 pool: neso
   #vmImage: ubuntu-latest
@@ -39,3 +43,6 @@ steps:
 - script: |
     curl -4 ip.me
   displayName: 'ip-ul agentului'
+
+- ${{ if eq(parameters.test, true) }}:
+  - script: echo "Running all the tests"
