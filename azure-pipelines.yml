@@ -6,6 +6,11 @@
 trigger:
 - main
 
+parameters:
+  - name: testvar1
+    displayName: test prima variabila parametru
+    type: string
+    
 pool: neso
   #vmImage: ubuntu-latest
 
