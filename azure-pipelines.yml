@@ -4,13 +4,13 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/python
 
 trigger:
-- main
+- none
 
 parameters:
   - name: testvar1
     displayName: test prima variabila parametru
     type: string
-    
+
 pool: neso
   #vmImage: ubuntu-latest
 
